@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-image: url('../assets/bgbillede.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    background-color: #EDF4F2;
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.card button {
+    background-color: #31473A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.card button, .dropdown select {
+    background-color: #31473A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.card .dropdown select {
+    background-color: #EDF4F2;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid #31473A;
+    border-radius: 10px;
+}
+
+.card .dropdown {
+    position: relative;
+}
+
+.card .dropdown ul {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #EDF4F2;
+    border-radius: 10px;
+    padding: 10px 0;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .dropdown:hover ul {
+    display: block;
+}
+
+.card .dropdown ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.card .dropdown ul li:hover {
+    background-color: #31473A;
+    color: white;
+}
+
+.card button {
+    background-color: #31473A;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #1f352b;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.card div {
+    margin-right: 20px;
+}
+
+.card .dropdown h2 {
+    margin-right: 10px;
+}
+
+.selectable {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.selectable:hover {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.selected {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+}

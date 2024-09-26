@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestil Tur</title>
+    <script src="../js/scripts.js"></script>
+    <link rel="stylesheet" href="../css/lokation.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="selectable" id="passager" onclick="selectOption('passager')">
+                <h2>Passager</h2>
+            </div>
+            <div class="selectable" id="chauffor" onclick="selectOption('chauffor')">
+                <h2>Chauffør</h2>
+            </div>
+            <div class="dropdown">
+                <h2>Hvor er du fra?</h2>
+                <select id="cityDropdown" onchange="updateCity()">
+                    <option value="Gudhjem">Gudhjem</option>
+                    <option value="Rønne">Rønne</option>
+                    <option value="Nexø">Nexø</option>
+                </select>
+            </div>
+            <button onclick="continueAction()">Fortsæt</button>            
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestil Tur</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="assets/car_icon.png" alt="Car icon">
+                <span>Bestil tur</span>
+            </div>
+            <div class="navbar-right">
+                <img src="assets/email_icon.webp" alt="Mail icon">
+                <img src="assets/phone_icon.png" alt="Phone icon">
+            </div>
+        </div>
+
+        <div class="content">
+            <div>
+                <div class="login-box">
+                    <h2>Velkommen</h2>
+                    <p style="margin-bottom: 10px;">Log på for at forsætte</p>
+                    <form onsubmit="handleLogin(event)">
+                        <input type="text" id="username" placeholder="Angiv brugernavn" required>
+                        <input type="password" id="password" placeholder="Angiv adgangskode" required>
+                        <button type="submit">Log på</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map">
+                <!-- Kort-område placeholder -->
+                <img src="assets/bornholm.png" alt="Bornholm map">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
